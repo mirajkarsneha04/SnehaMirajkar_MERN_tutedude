@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+/* Navbar Styling using inline/inline-block */
+.navbar {
+    width: 100vw;
+    height: 12vh;
+    padding: 0 5vw;
+    line-height: 12vh;
+}
+
+.nav-logo {
+    display: inline-block;
+    width: 20vw;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333;
+    vertical-align: middle;
+}
+
+.nav-links {
+    display: inline-block;
+    width: 50vw;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.nav-links a {
+    display: inline;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #666666;
+    font-size: 0.95rem;
+}
+
+.nav-user {
+    display: inline-block;
+    width: 18vw;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.user-btn {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: #e6f0fa;
+    color: #4a90e2;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+}
+
+/* Hero Section Styling using ViewPort units */
+.hero {
+    width: 100vw;
+    height: 88vh;
+    padding: 0 5vw;
+}
+
+.hero-left {
+    display: inline-block;
+    width: 45vw;
+    height: 80vh;
+    vertical-align: middle;
+    padding-top: 10vh;
+}
+
+.hero-left h1 {
+    font-size: 2.2rem;
+    color: #333333;
+    line-height: 1.2;
+    margin-bottom: 2vh;
+}
+
+.hero-left h1 span {
+    color: #47a0ff;
+}
+
+.hero-left p {
+    font-size: 0.9rem;
+    color: #888888;
+    line-height: 1.5;
+    width: 35vw;
+    margin-bottom: 4vh;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #51a5ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero-right {
+    display: inline-block;
+    width: 42vw;
+    height: 80vh;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5vh;
+}
+
+.hero-right img {
+    width: 35vw;
+    height: auto;
+    max-height: 70vh;
+}
