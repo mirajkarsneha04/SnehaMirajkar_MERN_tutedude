@@ -1,0 +1,59 @@
+/* Step 3: Body Background Color */
+body {
+    background-color: #f27244;
+    font-family: serif;
+    padding: 20px;
+}
+
+/* Step 5: Class selector for headings */
+.head {
+    color: darkblue;
+}
+
+/* Step 6 & 7: ID selector for 2nd heading */
+#bglime {
+    background-color: lime;
+}
+
+#bglime span {
+    color: red;
+}
+
+/* Step 8: Element selector for all paragraphs */
+p {
+    color: white;
+}
+
+/* Step 9: ID selector for 2nd paragraph */
+#para {
+    color: green;
+}
+
+/* Step 10: Styling specific text inside 3rd paragraph */
+p span {
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* Step 11: Styling links without id/class using descendant and pseudo-selectors */
+ul li:nth-child(1) a {
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+}
+
+ul li:nth-child(2) a {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+
+/* Pseudo-class selectors for ordered list items without id/class */
+ol li:nth-child(2) {
+    color: blue;
+}
+
+ol li:nth-child(3) {
+    color: red;
+}
