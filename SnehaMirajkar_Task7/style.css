@@ -1,0 +1,351 @@
+
+:root {
+
+
+    --color-primary: #0099ff;
+    --color-primary-dark: #0077cc;
+
+    --color-heading: #374151;
+    --color-text: #777777;
+
+    --color-user-background: #eaf4ff;
+    --color-user-text: #4aa3ff;
+
+    --color-white: #ffffff;
+
+    --space-small: 10px;
+    --space-medium: 20px;
+    --space-large: 40px;
+    --space-xlarge: 70px;
+
+    --radius-small: 8px;
+
+    --breakpoint-tablet: 768px;
+
+    --breakpoint-mobile: 480px;
+
+    --font-family: Arial, Helvetica, sans-serif;
+
+    --heading-size: clamp(2rem, 4vw, 3.125rem);
+
+    --body-size: 18px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--font-family);
+    color: var(--color-heading);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+.navbar {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: var(--medium-padding, 20px) 50px;
+
+    transition:
+        padding 0.3s ease,
+        gap 0.3s ease;
+}
+
+
+/* Logo */
+
+.logo img {
+    width: 90px;
+
+    transition: width 0.3s ease;
+}
+
+
+/* Navigation links */
+
+.menu {
+    display: flex;
+    gap: 30px;
+
+    flex-shrink: 0;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 18px;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.menu a:hover {
+    color: var(--color-primary);
+}
+
+
+/* Username badge */
+
+.username span {
+    display: inline-block;
+
+    background-color: var(--color-user-background);
+    color: var(--color-user-text);
+
+    padding: 10px 15px;
+
+    border-radius: var(--radius-small);
+
+    font-size: 16px;
+
+    transition:
+        padding 0.3s ease,
+        font-size 0.3s ease;
+}
+
+.hero {
+    min-height: calc(100vh - 100px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--space-large);
+
+    padding: var(--space-large) var(--space-xlarge);
+
+
+}
+
+
+.hero-content {
+    width: 50%;
+}
+
+
+.hero-image {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Hero heading */
+
+.hero-content h1 {
+    color: var(--color-heading);
+
+    font-size: var(--heading-size);
+
+    line-height: 1.2;
+
+    margin-bottom: var(--space-medium);
+
+    transition: font-size 0.3s ease;
+}
+
+
+.hero-content h1 span {
+    color: var(--color-primary);
+}
+
+
+/* Hero paragraph */
+
+.hero-content p {
+    width: 80%;
+
+    color: var(--color-text);
+
+    font-size: var(--body-size);
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+
+    transition:
+        width 0.3s ease,
+        font-size 0.3s ease;
+}
+
+
+.hero-content button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+    border: none;
+    border-radius: var(--radius-small);
+
+    padding: 15px 25px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.hero-content button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+
+.hero-content button:active {
+    transform: scale(0.98);
+}
+
+
+
+.hero-image img {
+    width: 500px;
+    max-width: 100%;
+
+    transition: width 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 25px;
+    }
+
+
+    .logo img {
+        width: 70px;
+    }
+
+
+    .menu {
+        gap: 15px;
+    }
+
+
+    .menu a {
+        font-size: 15px;
+    }
+
+
+    .username span {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+
+    .hero {
+        
+        padding: 30px;
+        gap: 20px;
+    }
+
+
+    .hero-content p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+
+    .hero-content button {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+
+
+    .hero-image img {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+    .logo img {
+        width: 60px;
+    }
+
+
+    .username span {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+
+
+    .hero {
+     
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 20px;
+
+        gap: 25px;
+    }
+
+
+    .hero-content,
+    .hero-image {
+        width: 100%;
+    }
+
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+
+    .hero-content p {
+        width: 100%;
+        font-size: 15px;
+    }
+
+
+    .hero-content button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+
+    .hero-image {
+        justify-content: center;
+    }
+
+
+    .hero-image img {
+        width: 220px;
+    }
+}
+
+
+.menu a:focus-visible,
+.hero-content button:focus-visible,
+.logo:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
+}
