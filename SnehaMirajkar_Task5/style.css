@@ -1,122 +1,80 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
-    width: 100vw;
-    height: 100vh;
-    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
 }
 
-/* Navbar Styling using inline/inline-block */
 .navbar {
-    width: 100vw;
-    height: 12vh;
-    padding: 0 5vw;
-    line-height: 12vh;
+    padding: 20px;
 }
 
 .nav-logo {
     display: inline-block;
-    width: 20vw;
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: bold;
-    color: #333333;
-    vertical-align: middle;
 }
 
 .nav-links {
     display: inline-block;
-    width: 50vw;
-    text-align: center;
-    vertical-align: middle;
+    margin-left: 50px;
 }
 
 .nav-links a {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block;
+    margin-right: 20px;
     text-decoration: none;
-    color: #666666;
-    font-size: 0.95rem;
+    color: gray;
 }
 
 .nav-user {
     display: inline-block;
-    width: 18vw;
-    text-align: right;
-    vertical-align: middle;
+    float: right;
+    background-color: #e3f2fd;
+    padding: 8px 15px;
+    color: #0099ff;
+    border-radius: 5px;
 }
 
-.user-btn {
-    display: inline-block;
-    padding: 8px 18px;
-    background-color: #e6f0fa;
-    color: #4a90e2;
-    border: none;
-    border-radius: 8px;
-    font-size: 0.85rem;
-}
-
-/* Hero Section Styling using ViewPort units */
-.hero {
-    width: 100vw;
-    height: 88vh;
-    padding: 0 5vw;
+.hero-section {
+    padding: 40px;
 }
 
 .hero-left {
     display: inline-block;
-    width: 45vw;
-    height: 80vh;
-    vertical-align: middle;
-    padding-top: 10vh;
+    width: 48%;
+    vertical-align: top;
 }
 
 .hero-left h1 {
-    font-size: 2.2rem;
-    color: #333333;
-    line-height: 1.2;
-    margin-bottom: 2vh;
+    font-size: 35px;
+    color: #333;
 }
 
-.hero-left h1 span {
-    color: #47a0ff;
+.highlight {
+    color: #0099ff;
 }
 
 .hero-left p {
-    font-size: 0.9rem;
-    color: #888888;
-    line-height: 1.5;
-    width: 35vw;
-    margin-bottom: 4vh;
+    color: gray;
+    margin: 20px 0;
 }
 
-.cta-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #51a5ff;
-    color: #ffffff;
+.book-btn {
+    background-color: #0099ff;
+    color: white;
+    padding: 12px 20px;
     border: none;
-    border-radius: 10px;
-    font-size: 0.9rem;
-    font-weight: bold;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 .hero-right {
     display: inline-block;
-    width: 42vw;
-    height: 80vh;
-    text-align: center;
-    vertical-align: middle;
-    padding-top: 5vh;
+    width: 48%;
+    vertical-align: top;
+    text-align: right;
 }
 
 .hero-right img {
-    width: 35vw;
-    height: auto;
-    max-height: 70vh;
+    width: 80%;
 }
