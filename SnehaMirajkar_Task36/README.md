@@ -5,7 +5,7 @@ This submission contains both the Express.js backend and React frontend.
 ## Folder structure
 
 ```text
-OmDendge_Task36/
+SnehaMirajkar_Task36/
 ├── backend/
 │   ├── middleware/
 │   │   └── authMiddleware.js
