@@ -1,15 +1,10 @@
-# Task 7: CSS Laundry Services Responsive Issue
+# Laundry Services Responsive Page
 
-Refactored navigation and hero section using Flexbox and CSS Media Queries to support Desktop, Tablet, and Mobile viewport sizes smoothly.
-
-## Features
-- Flexbox Navigation: Responsive layout replacing inline display modes.
-- Mobile Navigation: Hides links on screens under 480px while retaining logo and action button.
-- Responsive Typography & Assets: Scales font sizes and scales images down across breakpoints.
-- Mobile Layout Stacking: Stacks left and right hero content vertically using flex-direction: column.
-
-## Files Included
-- index.html: Responsive DOM markup structure
-- style.css: Media query rules and Flexbox layouts
-- laundry.png: Hero section asset
-- README.md: Project documentation
+This is my CSS assignment for making the laundry page responsive.
+I used the previous laundry hero section and changed it so that it can work on different screen sizes.
+For the desktop view, the text and image are shown next to each other.
+For the tablet view, I reduced the size of the text and image.
+For the mobile view, I hid the navigation links and kept only the logo and username.
+I used media queries to make these changes.
+I also used Flexbox and changed the hero direction to column on mobile.
+The main files in this project are index.html and style.css.
